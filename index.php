@@ -1,11 +1,24 @@
 <html>
 <head>
-	<title>The Tea Club</title> 
-	<link rel="stylesheet" type="text/css" href="style.css">
+<title>The Tea Club</title> 
+<link rel="stylesheet" type="text/css" href="style.css">
 
-	<script style="text/javascript" src="includes/jquery.min.js"></script>
-	<script style="text/javascript" src="includes/background.js"></script>
+<?php 
+    $i = 0; 
+    $dir = 'img/';
+    if ($handle = opendir($dir)) {
+        while (($file = readdir($handle)) !== false){
+            if (!in_array($file, array('.', '..')) && !is_dir($dir.$file)) 
+                $i++;
+        }
+    }
+?>
+<script type="text/javascript">
+	var count=<?php echo json_encode($i); ?>;
+</script>
+
 </head> 
+
 <body> 
 
 <div id="content" class="LR-content">
@@ -15,7 +28,6 @@
 		<div class="LR-bg-img LR-site-bg-image-container LR-site-show-on-bg-image">
 	</div>
 	</div>
-
 	<div class="LR-box-wrapper">	
 		<div class="LR-box">
 			<div class="LR-box-container">
@@ -35,6 +47,9 @@
 		</div>
 	</div>
 </div>  
+
+<script style="text/javascript" src="includes/jquery.min.js"></script>
+<script style="text/javascript" src="includes/background.js"></script>
 
 </body>
 </html>
