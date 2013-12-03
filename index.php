@@ -26,7 +26,7 @@
 	<div class="LR-box-wrapper">
 		<div class="LR-box-container">
 			<div class="LR-site-tagline  LR-clearfix">
-				<p style="background-color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial;">The Tea Club</p>
+				<p>The Tea Club</p>
 			</div>		
 			<div class="LR-site-description ">
 				<p style="font-size: 90%;">This club started with a small group of UT students drinking tea in their balcony. Wanting to bring new ideas and hoping to broaden discussions, the idea of inviting the student body to participate in casual philosophical conversations about anything was materialized.</p>
@@ -37,9 +37,9 @@
 	</div>
 </div>  
 
-<script type="text/javascript">var count=<?php echo json_encode($i); ?>;</script>
-<script style="text/javascript" src="includes/jquery.min.js"></script>
-<script style="text/javascript" src="includes/background.js"></script>
+<script type="text/javascript">var count=<?php echo json_encode($i); ?>;console.log(count);</script>
+<script type="text/javascript" src="includes/jquery.min.js"></script>
+<script type="text/javascript" src="includes/background.js"></script>
 
 </body>
 </html>
