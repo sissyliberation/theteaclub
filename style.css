@@ -2,6 +2,7 @@ html, body {
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	margin:0;
 	padding:0;
+	overflow: hidden;
 }
 
 a {
@@ -43,25 +44,15 @@ a {
 	min-height: 100%;
 }
 
-.LR-content {
-	color: #000;
-	font-size:14px;
-	font-weight: 300;
-	position: absolute;
-	z-index:1;
-	min-height: 100%;
-	width: 100%;
-}
-
 .LR-clearfix {
   *zoom: 1;
 }
 
 .LR-clearfix:before,
 .LR-clearfix:after {
-  display: table;
-  line-height: 0;
-  content: "";
+	display: table;
+	line-height: 0;
+	content: "";
 }
 
 .LR-clearfix:after {
@@ -69,21 +60,20 @@ a {
 }
 
 .LR-box-wrapper {
-		width:90%;
-		max-width: 1024px;
-    margin:0 auto;
-		position: relative;
-		z-index: 2;
+	width:90%;
+	margin:0 auto;
+	position: relative;
+	z-index: 2;
 }
 
 .LR-box-container {
     width: 100%;		
     max-width: 700px;
-    margin: 80px 0 50px;
+    margin: 0;
 }
 
 .LR-site-tagline {
-	margin: 0 0 20px;
+	margin: 80px 0 20px;
 	font-size: 70px;
 	font-weight: 400;
 	color: #fff;
@@ -105,8 +95,14 @@ a {
 	margin: 0;
 	width: 100%;
 	font-size: 20px;
-	max-width: 380px;
+	max-width: 408px;
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.3em;
+}
+
+.footer a{
+	color:black;
+	text-decoration: none;
+	font-weight: bold;
 }
