@@ -13,6 +13,7 @@
         }
     }
 ?>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
 </head> 
 
@@ -45,6 +46,7 @@
 <script type="text/javascript" src="includes/jquery.min.js"></script>
 <script type="text/javascript" src="includes/background.js"></script>
 <script type="text/javascript" src="includes/footer.js"></script>
+<script type="text/javascript" src="includes/fadein.js"></script>
 
 </body>
 </html>
