@@ -37,16 +37,13 @@
 			</div>
 		</div>
 		<div class="footer"><a href="http://yvescourtois.com">Made with love by Yves Courtois.</a></div>
-
 	</div>
-
 </div>  
 
-<script type="text/javascript">var count=<?php echo json_encode($i); ?>;console.log(count);</script>
+<script type="text/javascript">var count=<?php echo json_encode($i); ?>;</script>
 <script type="text/javascript" src="includes/jquery.min.js"></script>
 <script type="text/javascript" src="includes/background.js"></script>
 <script type="text/javascript" src="includes/footer.js"></script>
-<script type="text/javascript" src="includes/fadein.js"></script>
 
 </body>
 </html>
