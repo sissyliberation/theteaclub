@@ -1,0 +1,82 @@
+html, body {
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  height: 100%;
+  color: #252729;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body::before {
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:.9;
+  background: rgba(246, 36, 89,.8);
+  z-index: -1;
+}
+
+h1 {
+  font-size: 2.8em;
+  white-space: pre;
+}
+
+h1 span {
+  padding: .25em .5em;
+  background: rgba(37,39,41,.9);
+  color: rgba(246, 36, 89,1);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  height: 100%;
+  width: 70%;
+  padding: 0 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description > p {
+  font-size: 1.1em;
+}
+
+.description > p:last-child {
+  font-style: italic;
+  font-size: .9em;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 1em;
+  text-align: center;
+}
+
+.footer > span {
+  font-weight: bold;
+}
+
+a {
+  color: #252729;
+  text-decoration: none;
+  transition: color .25s;
+}
+
+a:hover {
+  color: white;
+}
+
+@media screen and (min-width: 800px)  {
+  .wrapper {width: 33%;}
+}
