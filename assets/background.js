@@ -1,6 +1,3 @@
-;(function(){
-  var rng = Math.floor(Math.random()*17);
-  var url = "url(img/"+	rng + ".jpg)";
-  var body = document.getElementsByTagName("BODY")[0];
-  body.style.backgroundImage = url;
-})();
+document.getElementsByTagName("BODY")[0].style.backgroundImage = (function() {
+  return "url(img/"+ Math.floor(Math.random()*17)+ ".jpg)";
+})();;
